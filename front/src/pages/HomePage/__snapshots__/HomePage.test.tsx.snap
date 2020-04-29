@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage should render properly 1`] = `
+<div>
+  <p>
+    Here is no menu layout
+  </p>
+  <p>
+    HomePage
+  </p>
+  <a
+    href="/content"
+  >
+    Content
+  </a>
+</div>
+`;

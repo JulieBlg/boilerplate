@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentPage should render properly 1`] = `
+<div>
+  <p>
+    Here is menu layout
+  </p>
+  <p>
+    Content Page
+  </p>
+</div>
+`;
