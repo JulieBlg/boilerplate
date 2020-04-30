@@ -5,8 +5,8 @@ import NoMenuLayout from '../../layouts/NoMenuLayout';
 const HomePage = () => {
   return (
     <NoMenuLayout>
-      <p>HomePage</p>
-      <a href="/content">Content</a>
+      <h1>HomePage</h1>
+      <a href="/content">ENTER</a>
     </NoMenuLayout>
   );
 };

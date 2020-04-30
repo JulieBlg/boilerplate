@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState, FC } from 'react';
+import Container from '@material-ui/core/Container';
 
-const MenuLayout = ({ children }) => {
+import Menu from '../../components/Menu';
+import TopBar from '../../components/TopBar';
+
+interface Props {
+  children: Node;
+}
+
+const MenuLayout: FC<Props> = ({ children }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
-      <p>Here is menu layout</p>
-      {children}
+      <TopBar handleDrawerOpen={handleDrawerOpen} />
+      <Menu open={open} handleDrawerClose={handleDrawerClose} />
+      <Container>{children}</Container>
     </>
   );
 };

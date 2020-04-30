@@ -2,16 +2,27 @@
 
 exports[`HomePage should render properly 1`] = `
 <div>
-  <p>
-    Here is no menu layout
-  </p>
-  <p>
-    HomePage
-  </p>
-  <a
-    href="/content"
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary makeStyles-topBar-1 mui-fixed MuiPaper-elevation4"
   >
-    Content
-  </a>
+    <div
+      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    />
+  </header>
+  <div
+    class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+  />
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+  >
+    <h1>
+      HomePage
+    </h1>
+    <a
+      href="/content"
+    >
+      ENTER
+    </a>
+  </div>
 </div>
 `;

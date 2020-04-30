@@ -5,7 +5,7 @@ import MenuLayout from '../../layouts/MenuLayout';
 const ContentPage = () => {
   return (
     <MenuLayout>
-      <p>Content Page</p>
+      <h1>Content Page</h1>
     </MenuLayout>
   );
 };

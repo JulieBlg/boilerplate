@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
+import Container from '@material-ui/core/Container';
 
-const NoMenuLayout = ({ children }) => {
+import TopBar from '../../components/TopBar';
+
+interface Props {
+  children: Node;
+}
+
+const NoMenuLayout: FC<Props> = ({ children }) => {
   return (
     <>
-      <p>Here is no menu layout</p>
-      {children}
+      <TopBar noMenu />
+      <Container>{children}</Container>
     </>
   );
 };
